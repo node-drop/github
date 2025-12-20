@@ -1,0 +1,18 @@
+{
+  "name": "@node-drop/github-nodes",
+  "version": "1.0.0",
+  "description": "GitHub integration nodes for Node-Drop",
+  "main": "index.js",
+  "nodeDrop": {
+    "nodes": [
+      "nodes/github.node.js",
+      "nodes/github-trigger.node.js"
+    ],
+    "credentials": [
+      "credentials/github.credentials.js"
+    ]
+  },
+  "keywords": ["node-drop", "github", "api", "repositories"],
+  "author": "Node-Drop",
+  "license": "MIT"
+}
