@@ -25,6 +25,19 @@ const GitHubTriggerNode = {
   triggerType: "webhook",
   version: 1,
   description: "Trigger workflows from GitHub events (push, PRs, issues, releases, etc.)",
+  ai: {
+    description: "Trigger workflows from GitHub events (push, PRs, issues, releases, etc.)",
+    useCases: [
+      "Autodeploy on push to main",
+      "Notify Slack on new issue"
+    ],
+    tags: ["github", "trigger", "webhook", "ci/cd"],
+    rules: [
+      "Configure Webhook Secret for security",
+      "Select specific events to minimize traffic"
+    ],
+    complexityScore: 2
+  },
   icon: "file:icon.svg",
   color: "#eee",
   defaults: {

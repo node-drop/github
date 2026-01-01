@@ -26,6 +26,20 @@ const GitHubNode = {
   group: ["communication", "github", "development"],
   version: 1,
   description: "Interact with GitHub repositories, issues, PRs, and releases",
+  ai: {
+    description: "Interact with GitHub repositories, issues, PRs, and releases.",
+    useCases: [
+      "Create issue on bug report",
+      "List PRs for review",
+      "Get file content"
+    ],
+    tags: ["github", "git", "version control", "developer"],
+    rules: [
+      "Use PAT for authentication",
+      "Handle rate limits for bulk operations"
+    ],
+    complexityScore: 3
+  },
   icon: "file:icon.svg",
   color: "#eee",
   defaults: {
